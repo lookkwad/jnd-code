@@ -57,7 +57,11 @@
                         if (response == 'success') {
                             window.location.href = '/links';
                         } else {
-                            Swal.fire("email or password is incorrect", "", "error");
+                            Swal.fire({
+                                html: "email or password is incorrect", 
+                                icon: "error",
+                                position: 'top'
+                            });
                         }
                     },
                     error: function(error) {

@@ -43,6 +43,7 @@
         Swal.fire({ 
             html: err, 
             icon: "error",
+            position: 'top'
         });
     }
 </script>

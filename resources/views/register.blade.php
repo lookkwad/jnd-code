@@ -70,6 +70,7 @@
                         Swal.fire({
                             title: "Success!",
                             icon: "success",
+                            position: 'top'
                         }).then((result) => {
                             if (result.isConfirmed) {
                                 window.location.href = '/';

@@ -53,6 +53,7 @@
                     title: "Delete Links?",
                     icon: "warning",
                     showCancelButton: true,
+                    position: 'top'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         var id = $(this).data('id');
@@ -69,6 +70,7 @@
                                 Swal.fire({
                                     title: "Success!",
                                     icon: "success",
+                                    position: 'top'
                                 }).then((result) => {
                                     if (result.isConfirmed) {
                                         window.location.reload();
@@ -76,7 +78,7 @@
                                 });
                             },
                             error: function(error) {
-                                Swal.fire("Error", "", "error");
+                                showError(error);
                             }
                         });
                     }

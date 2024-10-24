@@ -15,7 +15,7 @@ return new class extends Migration
         DB::table('users')->insert([
             'firstname' => 'jnd',
             'lastname' => 'code',
-            'email' => 'jnd-admin@mail.com',
+            'email' => 'admin@mail.com',
             'password' => '$2y$12$AIkyCNzLkqRx6Ysf2jWtf.MmH.O5STxW3wSZBfNSSLQ4kb4neScri',  // P@ssw0rd
             'type' => 'admin',
         ]);
